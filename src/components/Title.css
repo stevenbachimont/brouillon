@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Brosskids';
+    src: url('src/fonts/bosskids/Bosskids.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'sotra';
+    src: url('src/fonts/sotra.ttf') format('opentype');
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.text-overlay2 {
+    position: absolute;
+    font-family: 'Brosskids', fallback, sans-serif;
+    background: #ef0606;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 8rem;
+    letter-spacing: 2px;
+    text-shadow: 100px 0 80px rgb(217, 8, 241);
+}
+
+.text-overlay1 {
+    position: absolute;
+    font-family: 'Brosskids', fallback, sans-serif;
+    background: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+    font-size: 9rem;
+    letter-spacing: -2px;
+    text-shadow: -100px 0 80px rgb(207, 9, 9);
+}
