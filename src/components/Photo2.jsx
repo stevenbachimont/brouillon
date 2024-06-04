@@ -9,12 +9,20 @@ export const Photo2 = () => {
         console.log(imageSrc);
     };
 
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const videoConstraints = {
+        facingMode: isMobile ? "environment" : "user"
+    };
+
     return (
         <>
-            <Webcam audio={false} ref={webcamRef} screenshotFormat="image/jpeg" />
+            <Webcam
+                audio={false}
+                ref={webcamRef}
+                screenshotFormat="image/jpeg"
+                videoConstraints={videoConstraints}
+            />
             <button onClick={capture}>Capture photo</button>
         </>
     );
 };
-
-
