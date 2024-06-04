@@ -1,7 +1,7 @@
 import  { useRef, useState, useEffect, useCallback } from 'react';
 import Webcam from "react-webcam";
 
-const Camera = () => {
+export const Photo = () => {
     const webcamRef = useRef(null);
     const [capturedImage, setCapturedImage] = useState(null);
     const [latitude, setLatitude] = useState(0);
@@ -51,4 +51,4 @@ const Camera = () => {
     );
 };
 
-export default Camera;
+
