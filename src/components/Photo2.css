@@ -1,0 +1,13 @@
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+
+#video {
+    width: 70%;
+    height: auto;
+}

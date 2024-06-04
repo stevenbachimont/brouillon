@@ -1,5 +1,5 @@
 import './App.css'
-import {Photo} from "./components/Photo.jsx";
+import { Photo2 } from "./components/Photo2.jsx";
 import {Title} from "./components/Title.jsx";
 
 
@@ -7,8 +7,7 @@ import {Title} from "./components/Title.jsx";
 function App() {
     return (
         <>
-            <Title/>
-            <Photo/>
+            <Photo2 />
 
         </>
     );
